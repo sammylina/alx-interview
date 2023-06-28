@@ -1,5 +1,5 @@
-#!/usr/bin/env python3
-""" pascal_triangle module
+#!/usr/bin/python3
+"""pascal_triangle module
 """
 
 
@@ -8,6 +8,8 @@ def pascal_triangle(n):
     """
 
     main_arr = []
+    if n <= 0:
+        return main_arr
     for row in range(1, n + 1):
         arr = []
         for col in range(1, row + 1):
