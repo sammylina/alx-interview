@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
+""" pascal_triangle module
+"""
+
 
 def pascal_triangle(n):
+    """ Print a pascal triangle with n rows
+    """
 
     main_arr = []
     for row in range(1, n + 1):
