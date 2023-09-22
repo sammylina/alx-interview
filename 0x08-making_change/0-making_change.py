@@ -13,11 +13,9 @@ def makeChange(coins, total):
     remaining_total = total
     coins_count = 0
     while remaining_total:
-        if len(coins) == 0:
+        if len(coins) <= 0:
             return -1
         coin = coins.pop()
-        if remaining_total < coin:
-            return -1
         coins_count += remaining_total // coin
         remaining_total = remaining_total % coin
     return coins_count
